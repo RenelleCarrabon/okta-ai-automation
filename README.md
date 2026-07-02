@@ -1,7 +1,7 @@
 # Okta AI Automation Suite
 
 An AI-powered IT automation toolkit that handles the full employee lifecycle — 
-onboarding, access review, and offboarding — using natural language and the Okta API.
+onboarding, access review, and offboarding — using Okta API.
 
 
 ## What it does
