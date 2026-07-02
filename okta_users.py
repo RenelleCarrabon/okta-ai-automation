@@ -95,25 +95,4 @@ REASON: (one sentence explanation)"""
 
 
 # --- RUN IT ---
-print("\n🤖 IT Automation Assistant")
-print("=" * 40)
-
-request = input("\nEnter your IT request: ")
-response = ask_claude(request)
-print("\nClaude's Analysis:")
-print(response)
-
-# Parse Claude's response and execute the action
-lines = response.strip().split("\n")
-action = lines[0].replace("ACTION: ", "").strip()
-user_id = lines[2].replace("ID: ", "").strip()
-
-if action == "DEACTIVATE" and user_id not in ["NOT FOUND", "NEW", "N/A"]:
-    confirm = input(f"\n⚠️ Confirm deactivation of user {user_id}? (yes/no): ")
-    if confirm.lower() == "yes":
-        deactivate_user(user_id)
-        print("\n✅ Action completed successfully")
-    else:
-        print("\n❌ Action cancelled")
-else:
-    print("\n⚠️ No automatic action taken - please review Claude's analysis")
+get_users()

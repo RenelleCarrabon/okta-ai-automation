@@ -1,0 +1,53 @@
+OKTA ACCESS REVIEW REPORT
+Generated: 2026-07-02 15:09:13.163721
+==================================================
+
+User: Sofia Ramirez
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been in a PROVISIONED state since creation with no record of any login activity, indicating the user has never activated their account, which represents an unused dormant account that poses an unnecessary security risk and should be deactivated or investigated.
+------------------------------
+
+User: Marcus Williams
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but never logged into, suggesting it may be an orphaned, test, or incorrectly created account that poses an unnecessary access risk and should be removed or re-evaluated.
+------------------------------
+
+User: Lauren OBrien
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been in PROVISIONED status since creation with no recorded login activity, indicating the user never activated the account, which poses a security risk as an unused, potentially forgotten credential that could be exploited.
+------------------------------
+
+User: James Harrison
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but never logged into, suggesting it may be an orphaned, mistakenly created, or potentially unauthorized account that poses an unnecessary access risk and should be deactivated or verified with the account owner.
+------------------------------
+
+User: Priya Patel
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has never been logged into since provisioning on 2026-07-02 and remains in a PROVISIONED state, indicating an abandoned or orphaned account that presents an unnecessary attack surface and should be deactivated until the user actively requires access.
+------------------------------
+
+User: Daniel Chen
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but has never been logged into, suggesting it may be an orphaned or improperly provisioned account that represents an unnecessary attack surface and should be deactivated or investigated before use.
+------------------------------
+
+User: Renelle Carrabon
+Status: ACTIVE
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: This account was created and used within the same day using a free third-party email address (Zoho Mail) rather than a corporate domain, which is a strong indicator of an unauthorized or malicious account that should not have access to organizational resources.
+------------------------------
+

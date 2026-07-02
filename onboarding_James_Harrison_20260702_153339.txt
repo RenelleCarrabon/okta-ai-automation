@@ -1,0 +1,36 @@
+ONBOARDING REPORT - James Harrison
+Generated: 2026-07-02 15:33:39.176904
+==================================================
+
+Title: Software Engineer
+Department: Engineering
+Email: james.harrison@company.com
+Okta ID: 00u14sxeu06xL6YwB698
+
+WELCOME EMAIL:
+# Welcome Email — James Harrison
+
+---
+
+**To:** james.harrison@company.com
+**Subject:** Welcome to the Team, James! 🎉
+
+---
+
+Dear James,
+
+Welcome aboard! We are thrilled to have you join us as a **Software Engineer** in the **Engineering Department**. Your start date of **July 2, 2026** is just around the corner, and the entire team is looking forward to working alongside you.
+
+To help you hit the ground running, your **Okta account has been set up and is ready to go**. You can log in at your company's Okta portal using your work email address. Okta will serve as your central hub for accessing the tools and applications you'll need from day one.
+
+If you run into any technical issues during login or have questions about your setup before your start date, please don't hesitate to reach out to us. We want to make sure your first day is as smooth and seamless as possible.
+
+Once again, welcome to the team, James — we are so excited to have you here and can't wait to see the great things you'll accomplish!
+
+Warm regards,
+
+**The IT Team**
+
+---
+
+> 💡 *Tip: Check your spam folder if you don't receive your Okta activation email within a few minutes.*

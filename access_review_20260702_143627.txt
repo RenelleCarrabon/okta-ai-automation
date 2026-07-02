@@ -1,0 +1,11 @@
+OKTA ACCESS REVIEW REPORT
+Generated: 2026-07-02 14:36:27.189623
+==================================================
+
+User: Renelle Carrabon
+Status: ACTIVE
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: This account was created and logged into within the same day using a free third-party email address (Zoho Mail) rather than a corporate email domain, which is highly indicative of an unauthorized or malicious account that should not exist in the organization's Okta environment.
+------------------------------
+
