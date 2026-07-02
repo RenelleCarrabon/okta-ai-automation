@@ -1,0 +1,53 @@
+OKTA ACCESS REVIEW REPORT
+Generated: 2026-07-02 15:41:22.427396
+==================================================
+
+User: Sofia Ramirez
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but never logged into, suggesting it may be an orphaned, test, or improperly provisioned account that represents an unnecessary attack surface and should be deactivated or investigated before activation.
+------------------------------
+
+User: Marcus Williams
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but has never been logged into, suggesting it may be an orphaned, test, or improperly provisioned account that presents an unnecessary attack surface and should be deactivated or investigated before access is granted.
+------------------------------
+
+User: Lauren OBrien
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been in a PROVISIONED state since creation with no recorded login, indicating the user has never activated the account, which presents an unnecessary attack surface and suggests the provisioning may have been abandoned or unauthorized.
+------------------------------
+
+User: Priya Patel
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has been provisioned but never logged into since creation, indicating a dormant/orphaned account that presents an unnecessary attack surface and should be deactivated or investigated before activation.
+------------------------------
+
+User: Daniel Chen
+Status: PROVISIONED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has never been logged into since provisioning and may represent an orphaned or unnecessary account that increases the attack surface without providing any business value.
+------------------------------
+
+User: Renelle Carrabon
+Status: ACTIVE
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: This account was created and logged in within the same day using a free third-party email address (Zoho Mail) rather than a corporate domain, which is a strong indicator of an unauthorized or fraudulent account that should not exist in an enterprise Okta environment.
+------------------------------
+
+User: James Harrison
+Status: PASSWORD_EXPIRED
+RISK: HIGH
+ACTION: DEACTIVATE
+REASON: Account has never been logged into and has an expired password, suggesting it is an abandoned or improperly provisioned account that presents an unnecessary attack surface and should be deactivated pending verification of business need.
+------------------------------
+
