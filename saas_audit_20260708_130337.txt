@@ -1,0 +1,90 @@
+SAAS LICENSE AUDIT REPORT
+Generated: 2026-07-08 13:03:37.047165
+Users audited: 6
+Waste flags: 5
+==================================================
+
+User: Sofia Ramirez (sofia.ramirez@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 9
+Logins (30 days): 0
+
+AI Analysis:
+RISK: HIGH
+UNUSED_APPS: Google Workspace Mail, Google Workspace Drive, Google Workspace Calendar, Google Workspace Sites, Google Workspace Account, Google Workspace Keep, Notion, Slack, Zoom
+ESTIMATED_WASTE: high
+RECOMMENDATION: Immediately audit Sofia Ramirez's employment status and suspend or deprovision all app licenses pending confirmation of active employment.
+REASON: Zero login activity across all 9 assigned applications over 30 days strongly indicates this account belongs to a departed employee, an inactive contractor, or a dormant account — all of which represent avoidable SaaS spend and a potential security risk.
+------------------------------
+
+User: Marcus Williams (marcus.williams@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 9
+Logins (30 days): 0
+
+AI Analysis:
+RISK: HIGH
+UNUSED_APPS: Google Workspace Mail, Google Workspace Drive, Google Workspace Calendar, Google Workspace Sites, Google Workspace Account, Google Workspace Keep, Notion, Slack, Zoom
+ESTIMATED_WASTE: high
+RECOMMENDATION: Immediately suspend Marcus Williams' Okta account and initiate license reclamation for all 9 assigned applications pending HR/manager verification of employment status.
+REASON: Zero login events across all assigned applications over a 30-day period is a strong indicator that this user is either inactive, departed, or on extended leave, making every assigned license a candidate for reclamation and representing measurable unnecessary spend.
+------------------------------
+
+User: Lauren OBrien (lauren.obrien@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 9
+Logins (30 days): 0
+
+AI Analysis:
+RISK: HIGH
+UNUSED_APPS: Google Workspace Mail, Google Workspace Drive, Google Workspace Calendar, Google Workspace Sites, Google Workspace Account, Google Workspace Keep, Notion, Slack, Zoom
+ESTIMATED_WASTE: high
+RECOMMENDATION: Immediately audit Lauren OBrien's employment status and suspend or deprovision all app assignments pending confirmation of active employment.
+REASON: Zero logins across all 9 assigned applications over a 30-day period is a strong indicator that this user is either no longer active, on extended leave, or a potential orphaned account, representing both direct licensing cost waste and a security risk.
+------------------------------
+
+User: Priya Patel (priya.patel@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 10
+Logins (30 days): 0
+
+AI Analysis:
+RISK: HIGH
+UNUSED_APPS: Google Workspace Mail, Google Workspace Drive, Google Workspace Calendar, Google Workspace Sites, Google Workspace Account, Google Workspace Keep, Atlassian Jira Service Desk, Notion, Slack, Zoom
+ESTIMATED_WASTE: high
+RECOMMENDATION: Immediately audit Priya Patel's employment status and suspend or deprovision all 10 app assignments pending confirmation of active employment.
+REASON: Zero logins across all assigned applications over a 30-day period is a strong indicator that this user is either no longer active, on extended leave, or a dormant account — all of which represent both direct licensing cost waste and a potential security risk from an unmonitored active account.
+------------------------------
+
+User: Daniel Chen (daniel.chen@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 10
+Logins (30 days): 0
+
+AI Analysis:
+RISK: HIGH
+UNUSED_APPS: Google Workspace Mail, Google Workspace Drive, Google Workspace Calendar, Google Workspace Sites, Google Workspace Account, Google Workspace Keep, DocuSign, Notion, Slack, Zoom
+ESTIMATED_WASTE: high
+RECOMMENDATION: Immediately suspend or deprovision all 10 app assignments pending verification of Daniel Chen's employment status and business need.
+REASON: Zero login events across all assigned applications over a 30-day period is a strong indicator of either an inactive/departed user or an account that has never been actively used, both of which represent unnecessary licensing cost and a potential security risk from dormant credentials.
+------------------------------
+
+User: Renelle Carrabon (renellecarrabon@zohomail.com)
+Status: ACTIVE
+Last Login: 2026-07-08T16:51:14.000Z
+Apps Assigned: 11
+Logins (30 days): 50
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: Google Workspace Sites, Google Workspace Keep, Okta Workflows
+ESTIMATED_WASTE: low
+RECOMMENDATION: Audit actual per-app login data for Google Workspace Sites, Google Workspace Keep, and Okta Workflows, and revoke access if no activity is confirmed.
+REASON: With 50 logins over 30 days the user is clearly active, but niche tools like Sites, Keep, and Okta Workflows are rarely used by typical end users and are strong candidates for license reclamation without impacting productivity.
+------------------------------
+

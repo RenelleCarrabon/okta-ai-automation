@@ -1,0 +1,98 @@
+SAAS LICENSE AUDIT REPORT
+Generated: 2026-07-08 12:47:16.560996
+Users audited: 6
+Waste flags: 0
+==================================================
+
+User: Sofia Ramirez (sofia.ramirez@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 0
+Logins (30 days): 0
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None
+ESTIMATED_WASTE: low
+RECOMMENDATION: No action required at this time; continue routine monitoring.
+REASON: Sofia Ramirez has no apps assigned in Okta and no login activity in the last 30 days, indicating no active SaaS license spend associated with this user account.
+
+---
+
+**⚠️ Note for broader review:** While there is no waste risk here, a user account with **zero app assignments and zero logins** may warrant a separate check to determine if this account is a **stale/orphaned account** that should be deprovisioned entirely, which is a security hygiene concern rather than a cost concern.
+------------------------------
+
+User: Marcus Williams (marcus.williams@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 0
+Logins (30 days): 0
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None
+ESTIMATED_WASTE: low
+RECOMMENDATION: No action required at this time.
+REASON: Marcus Williams has no apps assigned in Okta and zero login events, meaning there are no active licenses to audit or costs to recover, though it may be worth confirming whether this account is still needed or should be deprovisioned entirely.
+------------------------------
+
+User: Lauren OBrien (lauren.obrien@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 0
+Logins (30 days): 0
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None
+ESTIMATED_WASTE: low
+RECOMMENDATION: No action required at this time.
+REASON: Lauren OBrien has no apps assigned in Okta and no login activity in the last 30 days, indicating there are no active licenses to review or optimize, though it may be worth confirming whether this account is still needed or can be deprovisioned entirely.
+------------------------------
+
+User: Priya Patel (priya.patel@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 0
+Logins (30 days): 0
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None
+ESTIMATED_WASTE: low
+RECOMMENDATION: No action required at this time; continue standard monitoring.
+REASON: Priya Patel has no apps assigned in Okta and no login activity in the last 30 days, meaning there are no active licenses to audit or recover, though it may be worth confirming whether this account is still needed or should be deprovisioned entirely.
+------------------------------
+
+User: Daniel Chen (daniel.chen@company.com)
+Status: PROVISIONED
+Last Login: None
+Apps Assigned: 0
+Logins (30 days): 0
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None
+ESTIMATED_WASTE: low
+RECOMMENDATION: No action required at this time.
+REASON: Daniel Chen has no apps assigned in Okta and no login activity, indicating either a new user pending onboarding, an already-offboarded user with a clean state, or a placeholder account — there are no active licenses to audit or reclaim.
+
+---
+
+**⚠️ Note for reviewers:** While there is no waste risk here, it is worth verifying **why this account exists** with zero assignments and zero logins — if Daniel Chen is a former employee, the account itself should be **deactivated or removed** to reduce identity security risk, even without associated app costs.
+------------------------------
+
+User: Renelle Carrabon (renellecarrabon@zohomail.com)
+Status: ACTIVE
+Last Login: 2026-07-02T19:14:47.000Z
+Apps Assigned: 1
+Logins (30 days): 50
+
+AI Analysis:
+RISK: LOW
+UNUSED_APPS: None identified
+ESTIMATED_WASTE: low
+RECOMMENDATION: Maintain current license assignment and monitor on a quarterly basis.
+REASON: With 50 login events in the last 30 days, Renelle demonstrates consistent and active engagement with Okta Workflows, indicating the license is being fully utilized and presents no immediate cost optimization opportunity.
+------------------------------
+

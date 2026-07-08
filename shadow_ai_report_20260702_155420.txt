@@ -1,0 +1,69 @@
+SHADOW AI DETECTION REPORT
+Generated: 2026-07-02 15:54:20.306867
+Logs analyzed: 100
+App sign-ons found: 0
+==================================================
+
+AI ANALYSIS:
+# Okta Security Analysis Report
+
+---
+
+**SHADOW AI DETECTED:** INSUFFICIENT DATA
+**RISK LEVEL:** MEDIUM
+
+---
+
+## FINDINGS:
+
+**1. No Direct Shadow AI Tool Sign-Ons Detected**
+- Zero SSO-federated sign-ons to known unsanctioned AI platforms were logged
+- This absence is **not necessarily reassuring** — it may indicate AI tools are being accessed outside Okta's visibility entirely (direct browser access, mobile apps, API keys), which is itself a Shadow AI risk indicator
+
+**2. High-Privilege Administrative Activity Detected**
+- `application.policy.sign_on.rule.create` and `application.policy.sign_on.update` — Sign-on policy modifications could be used to **whitelist unauthorized applications** or weaken access controls
+- `app.oauth2.admin.consent.grant` — **High concern.** Admin-level OAuth consent grants can authorize third-party applications (including AI tools with OAuth flows) to access organizational data without appearing as traditional SSO sign-ons. This is a common Shadow AI ingestion vector
+- `policy.lifecycle.create` and `policy.rule.add` — New policies being created warrants review; could indicate someone is carving out exceptions for unsanctioned tools
+
+**3. Security Configuration Changes**
+- `security.threat.configuration.update` — Modifications to threat detection settings during a period of elevated admin activity is a notable concern. Validate who made this change and why
+- `system.rate_limit.configuration.update` — Rate limit adjustments could be used to enable high-volume API calls consistent with AI tool usage or data exfiltration to external AI services
+
+**4. Brand/System-Level Changes**
+- `system.brand.create` — Creation of new Okta branding profiles could indicate preparation for a new (potentially unsanctioned) application integration
+- `directory.user_profile.bootstrap` — User profile bootstrapping may indicate new service accounts or API-access identities being provisioned, sometimes used to authenticate to external AI services
+
+**5. Blind Spot Risk**
+- With 100 log events and **zero** SSO sign-ons captured, the log sample likely reflects **admin/system activity only**, not end-user behavior. End-user Shadow AI access via direct URLs would be entirely invisible in this dataset
+- AI tools accessed via **personal accounts, browser extensions, or direct API keys** will never appear in Okta logs regardless of configuration
+
+---
+
+## RECOMMENDATIONS:
+
+**Immediate Actions:**
+1. **Audit the `app.oauth2.admin.consent.grant` events immediately** — Identify exactly which applications received admin consent, what scopes were granted, and who authorized them. Revoke any unrecognized or unsanctioned OAuth grants
+2. **Review all policy changes** — Pull the full details of every `policy.lifecycle.create`, `policy.rule.add`, and `sign_on.rule.create` event. Confirm each change was authorized and documented
+
+**Shadow AI-Specific Controls:**
+3. **Implement DNS/Proxy filtering** — Deploy network-layer blocking/monitoring for known AI domains (openai.com, claude.ai, gemini.google.com, huggingface.co, etc.) since Okta SSO alone cannot detect direct-access Shadow AI usage
+4. **Enable Okta's App Discovery features** — If licensed, activate Okta Access Gateway or integrate with a CASB (Cloud Access Security Broker) such as Netskope, Microsoft Defender for Cloud Apps, or Zscaler to surface shadow application usage
+5. **Restrict OAuth consent** — Enforce admin-only OAuth consent policies in connected platforms (Microsoft 365, Google Workspace) to prevent users from self-authorizing AI integrations with corporate data
+6. **Deploy browser DLP** — Consider endpoint browser policies that log or block data submission to unsanctioned AI domains, particularly for copy-paste of sensitive content
+
+**Governance & Policy:**
+7. **Publish an approved AI tools list** — Ensure employees know which AI tools are sanctioned and have a formal request process for new tools, reducing the incentive to go around IT
+8. **Audit service accounts and API keys** — The user bootstrapping activity suggests potential non-human identities; ensure these are inventoried and cannot be used to authenticate to external AI services
+9. **Enable enhanced Okta logging** — Ensure System Log retention is maximized and integrate with SIEM (Splunk, Sentinel, etc.) for behavioral analytics on user sign-on patterns
+
+**Monitoring:**
+10. **Set alerts for future OAuth consent grants** — Any new `app.oauth2.admin.consent.grant` event should trigger an immediate security review workflow
+
+---
+
+## SUMMARY:
+
+No direct Shadow AI tool sign-ons were identified in the provided logs; however, the **absence of SSO events combined with significant administrative configuration changes** — particularly an OAuth admin consent grant and security policy modifications — creates meaningful risk that unsanctioned AI tools may be entering the environment through indirect channels invisible to Okta alone. The current log coverage is insufficient to rule out Shadow AI usage, as direct-access AI tools operating outside SSO federation will leave no trace in these logs. **Immediate investigation of the OAuth consent grant event and implementation of network-layer AI traffic monitoring are the highest-priority recommendations.**
+
+---
+*Analysis based on 100 Okta log events. Full Shadow AI assessment requires integration with network proxy, CASB, and endpoint telemetry.*
